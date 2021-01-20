@@ -30,31 +30,45 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="16dp"
             android:orientation="vertical"
+            android:padding="16dp"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
             <TextView
                 android:layout_width="match_parent"
-                android:textSize="16dp"
                 android:layout_height="wrap_content"
-                android:text='@{"Id = " +String.valueOf(viewModel.pokemonDetails.id)}' />
+                android:text='@{"Id = " +String.valueOf(viewModel.pokemonDetails.id)}'
+                android:textSize="16dp" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:textSize="16dp"
-                android:textStyle="bold"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16sp"
-                android:layout_height="wrap_content"
-                android:text="Abilities" />
+                android:text="Abilities"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/abilities"
                 android:layout_width="match_parent"
-                android:textSize="16dp"
-                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.abilitiesString}" />
+                android:layout_marginTop="5dp"
+                android:text="@{viewModel.abilitiesString}"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="Forms"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@{viewModel.formsString}"
+                android:textSize="16dp" />
 
         </LinearLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -17,8 +17,8 @@ class DetailsViewModel @Inject constructor(private val pokemonRepository: Pokemo
     BaseViewModel() {
 
      val pokemonDetails = MutableLiveData<Details>()
-     val abilities = MutableLiveData<List<Ability>>()
      val abilitiesString = MutableLiveData<String>()
+     val formsString = MutableLiveData<String>()
 
     val pokeMon = MutableLiveData<PokeMon>()
 
@@ -42,7 +42,12 @@ class DetailsViewModel @Inject constructor(private val pokemonRepository: Pokemo
                 abilityList.add(it.ability)
             }
             abilitiesString.value = abilityList.map { it.name }.joinToString("\n")
-            abilities.value = abilityList
+
+            val formsList = mutableListOf<String>()
+            details.forms.forEach {
+                formsList.add(it.name)
+            }
+            formsString.value = formsList.joinToString("\n")
         }
     }
 }
