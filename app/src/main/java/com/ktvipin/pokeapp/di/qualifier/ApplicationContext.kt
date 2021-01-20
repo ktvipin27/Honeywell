@@ -1,4 +1,4 @@
-package com.ktvipin.pokeapp.ui.di.qualifier
+package com.ktvipin.pokeapp.di.qualifier
 
 import javax.inject.Qualifier
 

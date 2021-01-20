@@ -5,7 +5,6 @@ import androidx.lifecycle.viewModelScope
 import com.ktvipin.pokeapp.data.model.PokeMon
 import com.ktvipin.pokeapp.data.repository.PokemonRepository
 import com.ktvipin.pokeapp.ui.base.viewmodel.BaseViewModel
-import com.ktvipin.pokeapp.ui.di.scope.ActivityScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

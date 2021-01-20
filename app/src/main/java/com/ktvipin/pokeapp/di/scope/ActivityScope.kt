@@ -1,4 +1,4 @@
-package com.ktvipin.pokeapp.ui.di.scope
+package com.ktvipin.pokeapp.di.scope
 
 import javax.inject.Scope
 

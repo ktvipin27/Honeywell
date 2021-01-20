@@ -2,9 +2,9 @@ package com.ktvipin.pokeapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
-import com.ktvipin.pokeapp.ui.di.key.ViewModelKey
-import com.ktvipin.pokeapp.ui.di.module.ViewModelFactoryModule
-import com.ktvipin.pokeapp.ui.di.scope.ActivityScope
+import com.ktvipin.pokeapp.di.key.ViewModelKey
+import com.ktvipin.pokeapp.di.module.ViewModelFactoryModule
+import com.ktvipin.pokeapp.di.scope.ActivityScope
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

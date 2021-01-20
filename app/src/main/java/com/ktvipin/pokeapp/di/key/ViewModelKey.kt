@@ -1,7 +1,6 @@
-package com.ktvipin.pokeapp.ui.di.key
+package com.ktvipin.pokeapp.di.key
 
 import androidx.lifecycle.ViewModel
-import com.ktvipin.pokeapp.ui.main.MainViewModel
 import dagger.MapKey
 import kotlin.reflect.KClass
 

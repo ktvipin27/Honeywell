@@ -5,7 +5,7 @@ package com.ktvipin.pokeapp.ui.base.viewmodel.factory
  */
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.ktvipin.pokeapp.ui.di.scope.ActivityScope
+import com.ktvipin.pokeapp.di.scope.ActivityScope
 import javax.inject.Inject
 import javax.inject.Provider
 

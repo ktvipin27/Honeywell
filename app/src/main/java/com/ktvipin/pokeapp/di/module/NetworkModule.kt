@@ -1,4 +1,4 @@
-package com.ktvipin.pokeapp.ui.di.module
+package com.ktvipin.pokeapp.di.module
 
 import android.app.Application
 import com.google.gson.FieldNamingPolicy

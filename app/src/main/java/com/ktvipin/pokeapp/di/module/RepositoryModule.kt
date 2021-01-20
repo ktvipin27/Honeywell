@@ -1,4 +1,4 @@
-package com.ktvipin.pokeapp.ui.di.module
+package com.ktvipin.pokeapp.di.module
 import com.ktvipin.pokeapp.data.remote.api.PokeApi
 import com.ktvipin.pokeapp.data.repository.PokemonRepository
 import com.ktvipin.pokeapp.data.repository.PokemonRepositoryImpl

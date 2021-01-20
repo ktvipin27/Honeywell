@@ -1,10 +1,10 @@
-package com.ktvipin.pokeapp.ui.di.module
+package com.ktvipin.pokeapp.di.module
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.ktvipin.pokeapp.ui.base.viewmodel.factory.ViewModelFactory
-import com.ktvipin.pokeapp.ui.di.qualifier.ActivityContext
-import com.ktvipin.pokeapp.ui.di.scope.ActivityScope
+import com.ktvipin.pokeapp.di.qualifier.ActivityContext
+import com.ktvipin.pokeapp.di.scope.ActivityScope
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

@@ -1,8 +1,8 @@
-package com.ktvipin.pokeapp.ui.di.component
+package com.ktvipin.pokeapp.di.component
 
-import com.ktvipin.pokeapp.ui.di.module.ApplicationModule
+import com.ktvipin.pokeapp.di.module.ApplicationModule
 import com.ktvipin.pokeapp.PokeApp
-import com.ktvipin.pokeapp.ui.di.module.*
+import com.ktvipin.pokeapp.di.module.*
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector

@@ -1,6 +1,6 @@
-package com.ktvipin.pokeapp.ui.di.module
+package com.ktvipin.pokeapp.di.module
 
-import com.ktvipin.pokeapp.ui.di.scope.ActivityScope
+import com.ktvipin.pokeapp.di.scope.ActivityScope
 import com.ktvipin.pokeapp.ui.main.MainActivity
 import com.ktvipin.pokeapp.ui.main.MainModule
 import dagger.Module

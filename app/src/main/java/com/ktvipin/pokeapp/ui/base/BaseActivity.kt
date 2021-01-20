@@ -5,7 +5,7 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
-import com.ktvipin.pokeapp.ui.di.qualifier.ActivityContext
+import com.ktvipin.pokeapp.di.qualifier.ActivityContext
 import com.ktvipin.pokeapp.ui.base.viewmodel.BaseViewModel
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
