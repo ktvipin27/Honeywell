@@ -9,6 +9,7 @@ import com.ktvipin.pokeapp.ui.di.qualifier.ActivityContext
 import com.ktvipin.pokeapp.ui.base.viewmodel.BaseViewModel
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
+import com.ktvipin.pokeapp.BR
 
 
 /**
@@ -35,7 +36,7 @@ abstract class BaseActivity<DB : ViewDataBinding, VM : BaseViewModel> : DaggerAp
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = viewModelProvider.get(viewModelClass)
-        //binding.setVariable(BR.viewModel, viewModel)
+        binding.setVariable(BR.viewModel, viewModel)
         binding.lifecycleOwner = this
         viewModel.handleArguments(intent.extras)
     }

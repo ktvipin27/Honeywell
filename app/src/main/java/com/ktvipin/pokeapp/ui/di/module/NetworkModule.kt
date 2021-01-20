@@ -5,6 +5,7 @@ import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.ktvipin.pokeapp.BuildConfig
+import com.ktvipin.pokeapp.data.remote.Urls
 import dagger.Module
 import dagger.Provides
 import okhttp3.Cache
@@ -123,7 +124,7 @@ class NetworkModule {
             .client(okHttpClient)
             .addConverterFactory(nullOrEmptyConverterFactory)
             .addConverterFactory(gsonConverterFactory)
-            //.baseUrl(Urls.BASE_URL)
+            .baseUrl(Urls.BASE_URL)
             .build()
     }
 

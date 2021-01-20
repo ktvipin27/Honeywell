@@ -11,8 +11,8 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(
-    modules = [AndroidSupportInjectionModule::class, ApplicationModule::class, /*ActivityModule::class,*/
-        NetworkModule::class, /*ApiModule::class, RepositoryModule::class,*/ TimberModule::class]
+    modules = [AndroidSupportInjectionModule::class, ApplicationModule::class, ActivityModule::class,
+        NetworkModule::class, ApiModule::class, RepositoryModule::class, TimberModule::class]
 )
 
 interface ApplicationComponent : AndroidInjector<PokeApp> {
