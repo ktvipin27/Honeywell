@@ -19,7 +19,6 @@ android {
         minSdkVersion(Config.Application.MIN_SDK_VERSION)
         targetSdkVersion(Config.Application.TARGET_SDK_VERSION_)
 
-        testInstrumentationRunner = Libs.Test.Junit.JUNIT_RUNNER
 
         setProperty("archivesBaseName", "pokeapp-v${versionName}(${versionCode})")
 
