@@ -1,5 +1,6 @@
 package com.ktvipin.pokeapp.data.repository
 
+import com.ktvipin.pokeapp.data.model.Details
 import com.ktvipin.pokeapp.data.remote.response.PokeListResponse
 
 /**
@@ -11,4 +12,8 @@ interface PokemonRepository {
         limit: Int,
         offset: Int
     ): PokeListResponse
+
+    suspend fun getDetails(
+        url:String
+    ): Details
 }

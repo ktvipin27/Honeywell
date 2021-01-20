@@ -1,6 +1,8 @@
 package com.ktvipin.pokeapp.di.module
 
 import com.ktvipin.pokeapp.di.scope.ActivityScope
+import com.ktvipin.pokeapp.ui.details.DetailsActivity
+import com.ktvipin.pokeapp.ui.details.DetailsModule
 import com.ktvipin.pokeapp.ui.main.MainActivity
 import com.ktvipin.pokeapp.ui.main.MainModule
 import dagger.Module
@@ -16,7 +18,7 @@ abstract class ActivityModule {
     @ActivityScope
     abstract fun contributeMainActivity(): MainActivity
 
-    /*@ContributesAndroidInjector(modules = [DetailsModule::class])
+    @ContributesAndroidInjector(modules = [DetailsModule::class])
     @ActivityScope
-    abstract fun contributeDetailsActivity(): DetailsActivity*/
+    abstract fun contributeDetailsActivity(): DetailsActivity
 }

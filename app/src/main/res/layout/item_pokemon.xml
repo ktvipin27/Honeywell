@@ -17,6 +17,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         app:cardElevation="8dp"
+        android:onClick="@{() -> callback.onItemClick(item)}"
         android:layout_height="60dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout

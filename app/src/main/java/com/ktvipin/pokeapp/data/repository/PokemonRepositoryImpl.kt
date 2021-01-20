@@ -1,5 +1,6 @@
 package com.ktvipin.pokeapp.data.repository
 
+import com.ktvipin.pokeapp.data.model.Details
 import com.ktvipin.pokeapp.data.remote.api.PokeApi
 import com.ktvipin.pokeapp.data.remote.response.PokeListResponse
 import javax.inject.Inject
@@ -13,5 +14,9 @@ class PokemonRepositoryImpl @Inject constructor(
 
     override suspend fun fetchPokemonList(limit: Int, offset: Int): PokeListResponse {
         return pokeApi.getList(limit,offset)
+    }
+
+    override suspend fun getDetails(url: String): Details {
+        return pokeApi.getDetails(url)
     }
 }
