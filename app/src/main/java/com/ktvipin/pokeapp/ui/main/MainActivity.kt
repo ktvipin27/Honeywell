@@ -28,6 +28,11 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), ItemCli
         super.onCreate(savedInstanceState)
         setSupportActionBar(toolbar)
         rv_articles.adapter = pokemanAdapter
+        rv_articles.addItemDecoration(
+            SpaceItemDecoration(
+                24
+            )
+        )
         viewModel.pokemons.observe(this, Observer {
             pokemanAdapter.submitList(it)
         })
